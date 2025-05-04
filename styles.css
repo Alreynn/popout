@@ -30,7 +30,9 @@ header {
     font-size: 2em;
     font-family: 'Helvetica';
     padding: 12px;
+    padding-left: 16px;
     width: 100%;
+    z-index: 5;
     box-sizing: border-box;
 }
 main { padding: 10px }
@@ -40,33 +42,31 @@ main { padding: 10px }
     margin-top: 42dvh;
     margin-bottom: 42dvh;
 }
-.float {
-    position: fixed;
-    left: 0;
-    right: 0;
-}
+.float { position: fixed; left: 0; right: 0 }
 .start {
     background-color: transparent;
     outline: none;
     color: #F0EBD8;
     border: 1px solid #F0EBD8;
+    border-radius: 8px;
     padding: 10px;
 }
 .start:active { background-color: #1D2D44 }
 a,p { color: #F0EBD8; text-decoration: none }
 
-.material-symbols-outlined {
+.fa-solid.fa-arrow-left {
     display: inline-block;
     font-size: 30px !important;
     line-height: 1;
     vertical-align: middle;
 }
-.material-symbols-outlined:focus { color: #aaa }
+.fa-solid.fa-arrow-left:focus { color: #aaa }
 .headerSpaceout { margin-top: 60px }
-.bottomSpaceout { margin-bottom: 40px; }
+.bottomSpaceout { padding-bottom: 60px; }
 .message {
     background-color: #1D2D44;
     color: #F0EBD8;
+    overflow-x: auto;
     padding: 10px;
     border-radius: 0.5em;
     margin-bottom: 10px;
@@ -115,19 +115,19 @@ a,p { color: #F0EBD8; text-decoration: none }
 #textSubmit {
     display: grid;
     margin: 0;
-    padding: 10px;
+    padding-right: 3px;
     width: auto;
     height: 100%;
     place-items: center;
+    text-align: center;
     background-color: #3E5C76;
     color: #F0EBD8;
-    font-size: 32px;
-    line-height: 1;
+    font-size: 1.5em;
     border-radius: 100%;
     aspect-ratio: 1;
     border: none;
 }
-#textSubmit:active { background-color: #3E5C76 }
+#textSubmit:active { background-color: #1D2D44 }
 
 @media (min-width: 768px) {
     #textInput { width: 92% }
