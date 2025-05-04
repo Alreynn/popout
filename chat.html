@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Popout! chat</title>
+        <link rel="icon" type="image/jpeg" href="favicon.png">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    
+    <body>
+        <header>
+            <a type="submit" href="index.html">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </a>
+        </header>
+        
+        <main id="parent">
+            <div class="headerSpaceout"></div>
+            <p class="middle float" id="placeholder">Send messages</p>
+        </main>
+        
+        <div class="inputandsend">
+            <textarea id="textInput" rows="2" placeholder="Type message"></textarea>
+            <button onclick="addMessage()" id="textSubmit" type="submit">
+                <span class="material-symbols-outlined">send</span>
+            </button>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
