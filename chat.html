@@ -3,16 +3,16 @@
     <head>
         <title>Popout! chat</title>
         <link rel="icon" type="image/jpeg" href="favicon.png">
-        <link rel="stylesheet" href="styles.css">
         <script src="https://kit.fontawesome.com/6f449e2c05.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     
     <body>
         <header>
-            <a type="submit" href="index.html">
+            <button class="back" onclick="window.location.href='index.html'">
                 <i class="fa-solid fa-arrow-left"></i>
-            </a>
+            </button>
         </header>
         
         <main id="parent">
@@ -20,11 +20,54 @@
             <p class="middle float" id="placeholder">Send messages</p>
         </main>
         
-        <div class="inputandsend">
-            <textarea id="textInput" rows="2" placeholder="Type message"></textarea>
-            <button onclick="addMessage()" id="textSubmit" type="submit">
-                <i class="fa-regular fa-paper-plane"></i>
+        <div id="adminPanel" class="adminPanel">
+            <h1>Panel</h1><br>
+            <button class="start" onclick="generateLong()">Generate long message</button>
+            <button class="start" onclick="spamMessages()">Spam Messages</button>
+            <button class="start" onclick="textInput.value = ''">Clear textInput</button>
+            <button class="start" onclick="removeMessage()">Remove all messages</button>
+            <button class="start" onclick="dateAssignment()">Get current date</button>
+            <br><br>
+            <h2>Features to add & fix</h2>
+                <li>Stickers</li>
+                <li>.com texts turn into links</li>
+                <li>Vertical aligning textarea placeholder</li>
+            <br>
+            <h2>Sooner</h2>
+                <li>Redirecting to another page without refreshing (This needs AJAX function which idk how it works)</li>
+            <br>
+            <button class="start" onclick="closePanel()">
+                <i class="fa-solid fa-x"></i>
             </button>
+        </div>
+        
+        <button onclick="slideDown()" class="slideDown" id="slideDown">
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        
+        <div class="inputandsend" id="inputContainer">
+            <a onclick="alert('Feature unavailable at the moment. We will be updating this feature as soon as possible.')" id="sticker">
+                <i id="stickerIcon" class="fa-regular fa-face-smile"></i>
+            </a>
+            <textarea id="textInput" rows="1" placeholder="Type message"></textarea>
+            <a onclick="addMessage()" id="textSubmit" type="submit">
+                <i class="fa-regular fa-paper-plane"></i>
+            </a>
+        </div>
+        
+        <div class="stickerContainer" id="stickerContainer">
+            <img onclick="postSticker()" id="stickerList" src="../stickers/sticker1.webp"</img>
+            <img id="stickerList" src="../stickers/sticker2.webp"</img>
+            <img id="stickerList" src="../stickers/sticker3.webp"</img>
+            <img id="stickerList" src="../stickers/sticker4.webp"</img>
+            <img id="stickerList" src="../stickers/sticker5.webp"</img>
+            <img id="stickerList" src="../stickers/sticker6.webp"</img>
+            <img id="stickerList" src="../stickers/sticker7.webp"</img>
+            <img id="stickerList" src="../stickers/sticker8.webp"</img>
+            <img id="stickerList" src="../stickers/sticker9.webp"</img>
+            <img id="stickerList" src="../stickers/sticker10.webp"</img>
+            <img id="stickerList" src="../stickers/sticker11.webp"</img>
+            <img id="stickerList" src="../stickers/sticker12.webp"</img>
         </div>
         
         <script src="script.js"></script>
