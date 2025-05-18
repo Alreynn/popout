@@ -17,19 +17,20 @@
         
         <main id="parent">
             <div class="headerSpaceout"></div>
-            <p class="middle float" id="placeholder">Send messages</p>
+            <p class="messageEncrypt">Type out everything you want, no limitations.</p>
         </main>
+        
+        <div class="fulldisplay" id="loading">
+            <p id="loadText">Loading...</p>
+        </div>
         
         <div id="adminPanel" class="adminPanel">
             <h1>Panel</h1><br>
-            <button class="start" onclick="generateLong()">Generate long message</button>
             <button class="start" onclick="spamMessages()">Spam Messages</button>
-            <button class="start" onclick="textInput.value = ''">Clear textInput</button>
             <button class="start" onclick="removeMessage()">Remove all messages</button>
-            <button class="start" onclick="dateAssignment()">Get current date</button>
             <br><br>
             <h2>Features to add & fix</h2>
-                <li>Stickers</li>
+                <li>Limit message height, so after user types more than the limit, they need to click the see more button</li>
                 <li>.com texts turn into links</li>
                 <li>Vertical aligning textarea placeholder</li>
             <br>
@@ -46,7 +47,7 @@
         </button>
         
         <div class="inputandsend" id="inputContainer">
-            <a onclick="alert('Feature unavailable at the moment. We will be updating this feature as soon as possible.')" id="sticker">
+            <a onclick="sticker()" id="sticker">
                 <i id="stickerIcon" class="fa-regular fa-face-smile"></i>
             </a>
             <textarea id="textInput" rows="1" placeholder="Type message"></textarea>
@@ -56,20 +57,22 @@
         </div>
         
         <div class="stickerContainer" id="stickerContainer">
-            <img onclick="postSticker()" id="stickerList" src="../stickers/sticker1.webp"</img>
-            <img id="stickerList" src="../stickers/sticker2.webp"</img>
-            <img id="stickerList" src="../stickers/sticker3.webp"</img>
-            <img id="stickerList" src="../stickers/sticker4.webp"</img>
-            <img id="stickerList" src="../stickers/sticker5.webp"</img>
-            <img id="stickerList" src="../stickers/sticker6.webp"</img>
-            <img id="stickerList" src="../stickers/sticker7.webp"</img>
-            <img id="stickerList" src="../stickers/sticker8.webp"</img>
-            <img id="stickerList" src="../stickers/sticker9.webp"</img>
-            <img id="stickerList" src="../stickers/sticker10.webp"</img>
-            <img id="stickerList" src="../stickers/sticker11.webp"</img>
-            <img id="stickerList" src="../stickers/sticker12.webp"</img>
+            <img class="stickerList" src="../stickers/sticker1.webp"</img>
+            <img class="stickerList" src="../stickers/sticker2.webp"</img>
+            <img class="stickerList" src="../stickers/sticker3.webp"</img>
+            <img class="stickerList" src="../stickers/sticker4.webp"</img>
+            <img class="stickerList" src="../stickers/sticker5.webp"</img>
+            <img class="stickerList" src="../stickers/sticker6.webp"</img>
+            <img class="stickerList" src="../stickers/sticker7.webp"</img>
+            <img class="stickerList" src="../stickers/sticker8.webp"</img>
+            <img class="stickerList" src="../stickers/sticker9.webp"</img>
+            <img class="stickerList" src="../stickers/sticker10.webp"</img>
+            <img class="stickerList" src="../stickers/sticker11.webp"</img>
+            <img class="stickerList" src="../stickers/sticker12.webp"</img>
         </div>
         
         <script src="script.js"></script>
+        <script src="slidedown.js"></script>
+        <script src="loading.js"></script>
     </body>
 </html>
