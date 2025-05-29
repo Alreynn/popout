@@ -1,10 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <title>Popout! chat</title>
         <link rel="icon" type="image/jpeg" href="favicon.png">
         <script src="https://kit.fontawesome.com/6f449e2c05.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     
@@ -30,12 +31,16 @@
             <button class="start" onclick="removeMessage()">Remove all messages</button>
             <br><br>
             <h2>Features to add & fix</h2>
+            <ol>
                 <li>Limit message height, so after user types more than the limit, they need to click the see more button</li>
                 <li>.com texts turn into links</li>
                 <li>Vertical aligning textarea placeholder</li>
+            </ol>
             <br>
             <h2>Sooner</h2>
+            <ol>
                 <li>Redirecting to another page without refreshing (This needs AJAX function which idk how it works)</li>
+            </ol>
             <br>
             <button class="start" onclick="closePanel()">
                 <i class="fa-solid fa-x"></i>
@@ -47,7 +52,7 @@
         </button>
         
         <div class="inputandsend" id="inputContainer">
-            <a onclick="sticker()" id="sticker">
+            <a onclick="sticker()">
                 <i id="stickerIcon" class="fa-regular fa-face-smile"></i>
             </a>
             <textarea id="textInput" rows="1" placeholder="Type message"></textarea>
@@ -57,18 +62,18 @@
         </div>
         
         <div class="stickerContainer" id="stickerContainer">
-            <img class="stickerList" src="../stickers/sticker1.webp"</img>
-            <img class="stickerList" src="../stickers/sticker2.webp"</img>
-            <img class="stickerList" src="../stickers/sticker3.webp"</img>
-            <img class="stickerList" src="../stickers/sticker4.webp"</img>
-            <img class="stickerList" src="../stickers/sticker5.webp"</img>
-            <img class="stickerList" src="../stickers/sticker6.webp"</img>
-            <img class="stickerList" src="../stickers/sticker7.webp"</img>
-            <img class="stickerList" src="../stickers/sticker8.webp"</img>
-            <img class="stickerList" src="../stickers/sticker9.webp"</img>
-            <img class="stickerList" src="../stickers/sticker10.webp"</img>
-            <img class="stickerList" src="../stickers/sticker11.webp"</img>
-            <img class="stickerList" src="../stickers/sticker12.webp"</img>
+            <img alt="sticker1" class="stickerList" src="../stickers/sticker1.webp">
+            <img alt="sticker2" class="stickerList" src="../stickers/sticker2.webp">
+            <img alt="sticker3" class="stickerList" src="../stickers/sticker3.webp">
+            <img alt="sticker4" class="stickerList" src="../stickers/sticker4.webp">
+            <img alt="sticker5" class="stickerList" src="../stickers/sticker5.webp">
+            <img alt="sticker6" class="stickerList" src="../stickers/sticker6.webp">
+            <img alt="sticker7" class="stickerList" src="../stickers/sticker7.webp">
+            <img alt="sticker8" class="stickerList" src="../stickers/sticker8.webp">
+            <img alt="sticker9" class="stickerList" src="../stickers/sticker9.webp">
+            <img alt="sticker10" class="stickerList" src="../stickers/sticker10.webp">
+            <img alt="sticker11" class="stickerList" src="../stickers/sticker11.webp">
+            <img alt="sticker12" class="stickerList" src="../stickers/sticker12.webp">
         </div>
         
         <script src="script.js"></script>
