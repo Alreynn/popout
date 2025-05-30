@@ -47,7 +47,7 @@ main { padding: 10px }
     padding: 10px;
     cursor: pointer;
 }
-.start:active, .start:hover { background-color: #1D2D44 }
+.start:active { background-color: #1D2D44 }
 p { color: #F0EBD8; text-decoration: none }
 
 .back {
@@ -154,7 +154,7 @@ img.message { display: block; background: none; width: 40%; height: auto; margin
 }
 .inputandsend {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
     background-color: #0D1321;
     position: fixed;
@@ -181,10 +181,8 @@ img.message { display: block; background: none; width: 40%; height: auto; margin
     border-radius: 100%;
     cursor: pointer;
 }
-.fa-regular.fa-keyboard {
-    margin-top: 2px !important;
-}
-#stickerIcon:active, #stickerIcon:hover { color: #D0C9B6; background-color: #3F4F66 }
+.fa-regular.fa-keyboard { margin-top: 2px !important }
+#stickerIcon:active { color: #D0C9B6; background-color: #3F4F66 }
 .stickerContainer {
     display: none;
     position: fixed;
@@ -245,7 +243,10 @@ img.message { display: block; background: none; width: 40%; height: auto; margin
 #textSubmit:active, #textSubmit:hover { background-color: #1D2D44 }
 
 @media (min-width: 768px) {
+    .start:hover { background-color: #1D2D44 }
     .message { width: 60%; height: auto; margin-left: auto; margin-right: auto; }
     img.message { width: 20% }
-    .stickerList { width: 8em; height: 8em; }
+    .inputandsend {width: 60%; left: 20%; right: 20%; }
+    #stickerIcon { left: 20% }
+    .stickerList { width: 8em; height: 8em }
 }
